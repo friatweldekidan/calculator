@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(248, 235, 235);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    border-radius: 20px; /* Make display border circular */
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* Make button border circular */
+}
+
+.operator, .equals {
+    background-color: rgb(239, 175, 16);
+}
+
+.clear, .number, .decimal {
+    background-color: #333;
+    color: white;
+}
+
+
+button:hover {
+    background-color: #555;
+}
